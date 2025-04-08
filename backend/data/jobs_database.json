@@ -1,0 +1,291 @@
+[
+  {
+    "id": "job1",
+    "title": "Frontend Developer",
+    "company": "TechInnovate",
+    "location": "San Francisco, CA",
+    "experienceLevel": "Mid-Level",
+    "description": "We are looking for a talented Frontend Developer to join our growing team. The ideal candidate has strong skills in React, JavaScript, and CSS, with experience in building responsive web applications. You will work closely with designers, backend developers, and product managers to create intuitive user interfaces.",
+    "requiredSkills": [
+      "React",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Responsive Design",
+      "Redux",
+      "Git",
+      "RESTful APIs",
+      "TypeScript"
+    ],
+    "preferredSkills": [
+      "Next.js",
+      "GraphQL",
+      "Webpack",
+      "Jest",
+      "React Testing Library"
+    ],
+    "requiredExperience": "3+ years of frontend development experience",
+    "education": "Bachelor's degree in Computer Science or related field, or equivalent experience"
+  },
+  {
+    "id": "job2",
+    "title": "Data Scientist",
+    "company": "AnalyticsAI",
+    "location": "Remote",
+    "experienceLevel": "Senior",
+    "description": "AnalyticsAI is seeking a skilled Data Scientist to help us develop advanced machine learning models. You'll be responsible for processing large datasets, developing predictive models, and collaborating with engineering teams to implement your solutions. Strong background in statistics, machine learning, and programming required.",
+    "requiredSkills": [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "Data Analysis",
+      "Statistics",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn",
+      "Data Visualization"
+    ],
+    "preferredSkills": [
+      "TensorFlow",
+      "PyTorch",
+      "NLP",
+      "AWS",
+      "Spark",
+      "Big Data"
+    ],
+    "requiredExperience": "5+ years of experience with data analysis and machine learning",
+    "education": "Master's or PhD in Statistics, Computer Science, or related field"
+  },
+  {
+    "id": "job3",
+    "title": "Full Stack Developer",
+    "company": "WebSolutions",
+    "location": "New York, NY",
+    "experienceLevel": "Mid to Senior",
+    "description": "WebSolutions is looking for a Full Stack Developer to build robust web applications from the ground up. You will be involved in all aspects of development, from database design to frontend implementation. We need someone who can work independently and as part of a team to deliver high-quality software.",
+    "requiredSkills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express",
+      "SQL",
+      "MongoDB",
+      "RESTful APIs",
+      "Git",
+      "HTML",
+      "CSS"
+    ],
+    "preferredSkills": [
+      "TypeScript",
+      "Docker",
+      "AWS",
+      "CI/CD",
+      "Redis",
+      "GraphQL"
+    ],
+    "requiredExperience": "4+ years of full stack development experience",
+    "education": "Bachelor's degree in Computer Science or equivalent experience"
+  },
+  {
+    "id": "job4",
+    "title": "UX/UI Designer",
+    "company": "DesignForward",
+    "location": "Chicago, IL",
+    "experienceLevel": "Mid-Level",
+    "description": "DesignForward is seeking a creative UX/UI Designer to create beautiful, intuitive interfaces for our clients. You'll collaborate with product managers, developers, and stakeholders to transform complex requirements into elegant design solutions. Strong portfolio demonstrating your design process is required.",
+    "requiredSkills": [
+      "UI Design",
+      "UX Design",
+      "Figma",
+      "Adobe XD",
+      "Wireframing",
+      "Prototyping",
+      "User Research",
+      "Visual Design",
+      "Responsive Design"
+    ],
+    "preferredSkills": [
+      "HTML/CSS",
+      "Design Systems",
+      "Sketch",
+      "Adobe Creative Suite",
+      "Usability Testing",
+      "Animation"
+    ],
+    "requiredExperience": "3+ years of UX/UI design experience",
+    "education": "Bachelor's degree in Design, HCI, or related field"
+  },
+  {
+    "id": "job5",
+    "title": "DevOps Engineer",
+    "company": "CloudScale",
+    "location": "Austin, TX",
+    "experienceLevel": "Senior",
+    "description": "CloudScale is looking for a DevOps Engineer to help us build and maintain our cloud infrastructure. You will be responsible for implementing CI/CD pipelines, managing cloud resources, and ensuring the reliability and security of our systems. Experience with AWS and containerization is essential.",
+    "requiredSkills": [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Infrastructure as Code",
+      "Linux",
+      "Bash",
+      "Python",
+      "Monitoring"
+    ],
+    "preferredSkills": [
+      "Terraform",
+      "Ansible",
+      "Jenkins",
+      "ELK Stack",
+      "Prometheus",
+      "GitOps"
+    ],
+    "requiredExperience": "5+ years of experience in DevOps or SRE roles",
+    "education": "Bachelor's degree in Computer Science or equivalent experience"
+  },
+  {
+    "id": "job6",
+    "title": "Product Manager",
+    "company": "InnovateCorp",
+    "location": "Seattle, WA",
+    "experienceLevel": "Senior",
+    "description": "InnovateCorp is seeking an experienced Product Manager to drive our product strategy and roadmap. You will work closely with engineering, design, and marketing teams to develop and launch successful products. Strong analytical skills and experience with agile methodologies are required.",
+    "requiredSkills": [
+      "Product Strategy",
+      "Agile Methodologies",
+      "User Stories",
+      "Market Research",
+      "Competitive Analysis",
+      "Roadmapping",
+      "Stakeholder Communication",
+      "Data Analysis"
+    ],
+    "preferredSkills": [
+      "JIRA",
+      "SQL",
+      "A/B Testing",
+      "UX Design",
+      "Technical Background",
+      "Product Analytics"
+    ],
+    "requiredExperience": "5+ years of product management experience in tech",
+    "education": "Bachelor's degree, MBA preferred"
+  },
+  {
+    "id": "job7",
+    "title": "Backend Developer",
+    "company": "ServerLogic",
+    "location": "Boston, MA",
+    "experienceLevel": "Mid-Level",
+    "description": "ServerLogic is seeking a Backend Developer to design and implement scalable APIs and services. You'll be responsible for database design, performance optimization, and ensuring the security and reliability of our backend systems. Strong knowledge of Node.js or Python is required.",
+    "requiredSkills": [
+      "Node.js",
+      "Python",
+      "SQL",
+      "RESTful APIs",
+      "MongoDB",
+      "Database Design",
+      "Authentication",
+      "Git",
+      "Testing"
+    ],
+    "preferredSkills": [
+      "GraphQL",
+      "Redis",
+      "Microservices",
+      "Docker",
+      "AWS",
+      "Performance Optimization"
+    ],
+    "requiredExperience": "3+ years of backend development experience",
+    "education": "Bachelor's degree in Computer Science or equivalent experience"
+  },
+  {
+    "id": "job8",
+    "title": "Machine Learning Engineer",
+    "company": "AIFuture",
+    "location": "Remote",
+    "experienceLevel": "Senior",
+    "description": "AIFuture is looking for a Machine Learning Engineer to develop and deploy ML models at scale. You will work on cutting-edge AI applications, optimize model performance, and collaborate with data scientists to turn research into production-ready solutions. Strong programming skills and ML experience are essential.",
+    "requiredSkills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "NLP",
+      "Model Deployment",
+      "MLOps"
+    ],
+    "preferredSkills": [
+      "Kubernetes",
+      "AWS SageMaker",
+      "Docker",
+      "Distributed Computing",
+      "GPU Optimization",
+      "Model Monitoring"
+    ],
+    "requiredExperience": "5+ years of experience in machine learning and software engineering",
+    "education": "Master's or PhD in Computer Science, Machine Learning, or related field"
+  },
+  {
+    "id": "job9",
+    "title": "Mobile Developer (iOS)",
+    "company": "AppCreators",
+    "location": "Los Angeles, CA",
+    "experienceLevel": "Mid-Level",
+    "description": "AppCreators is seeking an iOS Developer to build beautiful and performant mobile applications. You will be responsible for implementing new features, fixing bugs, and optimizing app performance. Strong knowledge of Swift and iOS frameworks is required.",
+    "requiredSkills": [
+      "Swift",
+      "iOS",
+      "UIKit",
+      "Auto Layout",
+      "CoreData",
+      "RESTful APIs",
+      "Git",
+      "Testing",
+      "App Store Deployment"
+    ],
+    "preferredSkills": [
+      "SwiftUI",
+      "Combine",
+      "Core Animation",
+      "ARKit",
+      "Push Notifications",
+      "CI/CD"
+    ],
+    "requiredExperience": "3+ years of iOS development experience",
+    "education": "Bachelor's degree in Computer Science or equivalent experience"
+  },
+  {
+    "id": "job10",
+    "title": "Cybersecurity Analyst",
+    "company": "SecureShield",
+    "location": "Washington, DC",
+    "experienceLevel": "Senior",
+    "description": "SecureShield is looking for a Cybersecurity Analyst to help protect our infrastructure and data. You will be responsible for monitoring security alerts, conducting vulnerability assessments, and implementing security controls. Experience with security tools and knowledge of best practices are essential.",
+    "requiredSkills": [
+      "Network Security",
+      "Vulnerability Assessment",
+      "Security Controls",
+      "Incident Response",
+      "SIEM",
+      "Firewall Management",
+      "Risk Assessment",
+      "Threat Intelligence",
+      "Penetration Testing"
+    ],
+    "preferredSkills": [
+      "Python",
+      "Cloud Security",
+      "OSINT",
+      "CISSP",
+      "CEH",
+      "Compliance Frameworks"
+    ],
+    "requiredExperience": "5+ years of experience in cybersecurity roles",
+    "education": "Bachelor's degree in Cybersecurity, Computer Science, or related field"
+  }
+]

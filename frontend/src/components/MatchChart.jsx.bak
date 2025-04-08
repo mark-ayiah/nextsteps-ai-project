@@ -1,0 +1,140 @@
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
+import '../styles/MatchChart.css';
+
+const MatchChart = ({ matches }) => {
+  const [chartType, setChartType] = useState('pie');
+  const [isLoaded, setIsLoaded] = useState(false);
+  
+  useEffect(() => {
+    // Simulate loading for animation effect
+    const timer = setTimeout(() => {
+      setIsLoaded(true);
+    }, 500);
+    
+    return () => clearTimeout(timer);
+  }, []);
+  
+  // Prepare data for the pie chart - average category scores across top matches
+  const preparePieData = () => {
+    if (!matches || !matches.length) return [];
+    
+    // Calculate average scores for each category
+    const avgSkills = matches.reduce((sum, job) => sum + job.categoryScores.skills, 0) / matches.length;
+    const avgExperience = matches.reduce((sum, job) => sum + job.categoryScores.experience, 0) / matches.length;
+    const avgEducation = matches.reduce((sum, job) => sum + job.categoryScores.education, 0) / matches.length;
+    
+    return [
+      { name: 'Skills', value: avgSkills },
+      { name: 'Experience', value: avgExperience },
+      { name: 'Education', value: avgEducation },
+    ];
+  };
+  
+  // Prepare data for the bar chart - compare jobs by overall score
+  const prepareBarData = () => {
+    if (!matches || !matches.length) return [];
+    
+    return matches.map(job => ({
+      name: job.title.length > 15 ? job.title.substring(0, 15) + '...' : job.title,
+      score: job.score,
+      fullTitle: job.title,
+      company: job.company
+    }));
+  };
+  
+  const pieData = preparePieData();
+  const barData = prepareBarData();
+  
+  // Colors for pie chart segments
+  const COLORS = ['#8c5eff', '#3ae8dc', '#ff3a8c'];
+  
+  // Custom tooltip for the pie chart
+  const CustomPieTooltip = ({ active, payload }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="custom-tooltip">
+          <p className="tooltip-label">{`${payload[0].name}: ${Math.round(payload[0].value)}%`}</p>
+        </div>
+      );
+    }
+    return null;
+  };
+  
+  // Custom tooltip for the bar chart
+  const CustomBarTooltip = ({ active, payload }) => {
+    if (active && payload && payload.length) {
+      return (
+        <div className="custom-tooltip">
+          <p className="tooltip-title">{payload[0].payload.fullTitle}</p>
+          <p className="tooltip-company">{payload[0].payload.company}</p>
+          <p className="tooltip-score">{`Match Score: ${Math.round(payload[0].value)}%`}</p>
+        </div>
+      );
+    }
+    return null;
+  };
+  
+  return (
+    <div className="match-chart">
+      <div className="chart-controls">
+        <button 
+          className={`chart-btn ${chartType === 'pie' ? 'active' : ''}`} 
+          onClick={() => setChartType('pie')}
+        >
+          Breakdown
+        </button>
+        <button 
+          className={`chart-btn ${chartType === 'bar' ? 'active' : ''}`} 
+          onClick={() => setChartType('bar')}
+        >
+          Compare Jobs
+        </button>
+      </div>
+      
+      <div className="chart-container">
+        {chartType === 'pie' ? (
+          <motion.div 
+            className="pie-chart-wrapper"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ 
+              opacity: isLoaded ? 1 : 0, 
+              scale: isLoaded ? 1 : 0.9 
+            }}
+            transition={{ duration: 0.8 }}
+          >
+            <ResponsiveContainer width="100%" height={300}>
+              <PieChart>
+                <Pie
+                  data={pieData}
+                  cx="50%"
+                  cy="50%"
+                  labelLine={false}
+                  outerRadius={100}
+                  innerRadius={40}
+                  fill="#8884d8"
+                  dataKey="value"
+                  animationBegin={0}
+                  animationDuration={1500}
+                  startAngle={90}
+                  endAngle={-270}
+                >
+                  {pieData.map((entry, index) => (
+                    <Cell 
+                      key={`cell-${index}`} 
+                      fill={COLORS[index % COLORS.length]} 
+                      stroke="rgba(0,0,0,0.1)"
+                    />
+                  ))}
+                </Pie>
+                <Tooltip content={<CustomPieTooltip />} />
+                <Legend 
+                  verticalAlign="bottom" 
+                  align="center"
+                  layout="horizontal"
+                  iconType="circle"
+                  wrapperStyle={{ paddingTop: '15px' }}
+                />
+                

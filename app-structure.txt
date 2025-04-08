@@ -1,0 +1,52 @@
+# Job Matcher App Structure
+
+## Frontend (React)
+```
+job-matcher-app/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── assets/
+│       └── fonts/
+├── src/
+│   ├── components/
+│   │   ├── FileUpload.jsx
+│   │   ├── JobMatchResults.jsx
+│   │   ├── ResumeSuggestions.jsx
+│   │   ├── MatchChart.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── LoadingAnimation.jsx
+│   │   └── Footer.jsx
+│   ├── pages/
+│   │   ├── LandingPage.jsx
+│   │   └── ResultsPage.jsx
+│   ├── utils/
+│   │   └── resumeUtils.js
+│   ├── data/
+│   │   └── mockJobs.json
+│   ├── styles/
+│   │   ├── index.css
+│   │   └── components/
+│   │       ├── FileUpload.css
+│   │       ├── JobMatchResults.css
+│   │       └── ...
+│   ├── App.js
+│   └── index.js
+└── package.json
+
+## Backend (Python - Flask)
+```
+backend/
+├── app.py
+├── resume_parser/
+│   ├── __init__.py
+│   ├── parser.py
+│   └── utils.py
+├── job_matcher/
+│   ├── __init__.py
+│   ├── matcher.py
+│   └── utils.py
+├── data/
+│   └── jobs_database.json
+└── requirements.txt
+```
