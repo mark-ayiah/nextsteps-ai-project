@@ -37,8 +37,8 @@ NextSteps.ai is a modern web application that analyzes user resumes and matches 
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/jobmatcher.git
-cd jobmatcher
+git clone https://github.com/mark-ayiah/nextsteps-ai-project.git
+cd nextsteps-ai-project
 ```
 
 ### Backend Setup
