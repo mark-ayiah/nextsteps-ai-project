@@ -1,8 +1,8 @@
-# JobMatcher - AI Resume Analyzer & Job Matching App
+# NextSteps.ai - AI Resume Analyzer & Job Matching App
 
-JobMatcher is a modern web application that analyzes user resumes and matches them with job descriptions based on skills, experience, and education. This application provides personalized job recommendations and resume improvement suggestions.
+NextSteps.ai is a modern web application that analyzes user resumes and matches them with job descriptions based on skills, experience, and education. This application provides personalized job recommendations and resume improvement suggestions.
 
-![JobMatcher App](https://placeholder.com/jobmatcher-screenshot.png)
+![NextSteps.ai](https://placeholder.com/jobmatcher-screenshot.png)
 
 ## Features
 
